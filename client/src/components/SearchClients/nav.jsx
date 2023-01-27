@@ -132,7 +132,7 @@ export function NavbarSearch({ loggedIn }) {
     <Navbar id='navbar' width={{ sm: 325 }} p="md" className={classes.navbar}>
       <Navbar.Section className={classes.section}>
         <Link to={`/${client ? client.ClientId : ''}`}>
-          <h2 id='topLeftText'>Plateau Bird Surveys</h2>
+          <h2 id='topLeftText'>Company Wildlife Surveys</h2>
         </Link>
       </Navbar.Section>
 
