@@ -1,0 +1,18 @@
+.modalButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.deleteButton {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+    color: rgb(147, 0, 0);
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  }

@@ -1,0 +1,22 @@
+.commonName {
+    width: 120px;
+}
+
+#speciesCountText {
+	text-align: center;
+	width: 68px;
+}
+
+.removeSpecies {
+    width: 40px;
+}
+
+.incrementCount {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}

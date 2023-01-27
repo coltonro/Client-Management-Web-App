@@ -1,0 +1,80 @@
+.app {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* entire left navigation container */
+.mantine-1uzyddy {
+  height: 100vh;
+}
+
+.rightComponents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 1px solid blue; */
+  width: 100%;
+}
+
+#pageTitle {
+  padding-left: 20%;
+  padding-top: 14%;
+}
+
+.birdImgDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+#birdImage {
+  width: 75%;
+  max-width: 400px;
+  height: 75%;
+  padding-top: 10%;
+  opacity: 0.5;
+}
+
+#topLeftText {
+  padding-left: 10%;
+}
+
+.years:hover {
+  text-decoration: underline;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.form {
+  width: 40%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginForm {
+ margin-top: 15%;
+}
+
+/* toggle/dropdown button */
+.mantine-8nr514 {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid black;
+}
+
+/* toggle/dropdown button */
+.mantine-8nr514:hover {
+  background-color: #E4E4E4;
+}

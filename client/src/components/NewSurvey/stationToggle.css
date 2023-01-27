@@ -1,0 +1,36 @@
+.toggleButton {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.toggleButton:hover {
+    background-color: #E4E4E4;
+}
+
+.nameDatePicker {
+    width: 100%;
+    max-width: 700px;
+}
+
+.surveyStationToggle {
+    width: 100%;
+    max-width: 700px;
+}
+
+.icon-tabler-chevron-down {
+    margin-left: 10px;
+}
+
+/* station toggle button */
+.mantine-8nr514 {
+    width: 75%;
+    height: 60px;
+}
+
+.buttonText {
+    font-size: 18px;
+    margin-top: 15px;
+}

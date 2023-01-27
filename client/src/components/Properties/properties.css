@@ -1,0 +1,182 @@
+/* all property buttons on the page (if multiple) */
+.propertyButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .viewStationsButton */
+.mantine-6ykubh {
+  background-color: #ffffff;
+  height: 70px;
+  width: 80%;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.mantine-6ykubh:hover {
+  background-color: #E4E4E4;
+}
+
+/* toggle stations button */
+.mantine-8nr514 {
+  background-color: #ffffff;
+}
+
+/* toggle stations button hover */
+.mantine-8nr514:hover {
+  background-color: #E4E4E4;
+}
+
+.addPropertyButton {
+  margin-top: 20px;
+}
+
+.mantine-qo1k2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.clientName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 60vw;
+  max-width: 900px;
+  padding-top: 4%;
+  padding-bottom: 5px;
+}
+
+/* editext edit button (with the pencil icon) */
+/* not currently working, but worked in chrome dev tools??? */
+.styles-module_Editext__button__sxYQX {
+  border-radius: 10px;
+}
+
+.buttonDetails {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.primaryCounty {
+  padding: 0 5px;
+}
+
+.acreage {
+  padding: 0 5px;
+}
+
+.collapseOpen {
+  text-align: center;
+  padding-top: 20px;
+  width: 90%;
+}
+
+.textarea {
+  width: 100%;
+  margin-top: 10px;
+  /* height: auto; */
+}
+
+.mantine-Textarea-input {
+  height: 100px;
+}
+
+.stations {
+  text-align: center;
+}
+
+.styles-module_Editext__view_container__3oSYx {
+  text-align: left;
+  justify-content: space-between;
+  align-items: end !important;
+}
+
+.station {
+  padding-top: 20px;
+}
+
+.ediTextWithDelete {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: flex-end;
+  margin: 0 5px 0 10px;
+}
+
+.deleteButton:hover{
+  color: white;
+  background-color: rgb(147, 0, 0);
+}
+
+.text-box {
+  width: 100%;
+}
+
+.mappedStation {
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  ;
+  padding: 10 10 20 10;
+  margin-bottom: 15px;
+}
+
+.mantine-rrwa0t {
+  all: remove;
+}
+
+/* text inputs for latitude and longitude */
+.stationCoordinates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  padding-left: 4%;
+}
+
+.latForm {
+  padding-right: 5px;
+}
+
+.longForm {
+  padding-left: 5px;
+}
+
+.latLongEdit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+  margin-left: 10px;
+  color: gray;
+}
+
+.latLongEdit:hover {
+  cursor: pointer;
+  color: black;
+}
+
+/* station delete buttons are invisible while pencilIcon === false */
+.invisible {
+  display: none;
+}
+
+/* the Add Station button at very bottom of page */
+.addStation {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.addStation:hover {
+  background: lightgray;
+  cursor: pointer;
+}

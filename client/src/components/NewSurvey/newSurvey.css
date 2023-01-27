@@ -1,0 +1,50 @@
+.nameDateInput {
+    width: 100%;
+    max-width: 700px;
+}
+
+.generateReportButton {
+    width: 50%;
+    height: 45px;
+    background-color: #2D862E;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.generateReportButton:hover {
+    background-color: #39ac3b;
+    cursor: pointer;
+}
+
+.dateAndObservers {
+    display: flex;
+    flex-direction: row;
+}
+
+.biologistName {
+    margin-bottom: 10px;
+}
+
+.datePicker {
+    width: 50%;
+}
+
+.observers {
+    width: 50%;
+}
+
+/* DatePicker */
+/* .mantine-1t10g4x {
+    height: 44px;
+} */
+
+#mantine-9b90h4ar3 {
+    height: 37px !important;
+}
+
+#editSurveyLoader {
+    height: 50%;
+}

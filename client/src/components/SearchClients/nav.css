@@ -1,0 +1,16 @@
+.mantine-Modal-inner {
+    margin: 12% 0 0 15%;
+}
+
+.countyAndAcres {
+    display: flex;
+    flex-direction: row;
+}
+
+.acres {
+    margin-left: 20px;
+}
+
+#searchBar {
+    margin-bottom: 10px;
+}
