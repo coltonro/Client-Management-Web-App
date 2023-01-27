@@ -1,6 +1,6 @@
 {
-  "name": "plateau_bird_survey_website",
-  "homepage": "https://birdsurveyapp.azurewebsites.net",
+  "name": "wildlife_survey_app",
+  "homepage": "localhost",
   "version": "1.0.0",
   "description": "",
   "source": "./src/index.html",
