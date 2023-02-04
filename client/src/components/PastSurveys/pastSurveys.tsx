@@ -1,3 +1,4 @@
+import React from 'react'
 import { useContext, useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ClientContext } from '../clientContext';
@@ -54,7 +55,7 @@ function PastSurveys() {
   }, [client, modalOpened])
 
   // abbreviateBirderName shortens birder's last name to an initial
-  const abbreviateBirderName = (birderName) => {
+  const abbreviateBirderName = (birderName: string) => {
     if (birderName) {
       const trimmedName = birderName.trim();
       const firstName = trimmedName.split(' ').slice(0, -1).join(' ');
@@ -67,7 +68,7 @@ function PastSurveys() {
   }
 
   const editingPreviousSurvey = (survey) => {
-    localStorage.setItem('editingPastSurvey', true);
+    localStorage.setItem('editingPastSurvey', 'true');
     localStorage.setItem('pastSurveyId', survey.SurveyId);
   }
 
@@ -76,7 +77,7 @@ function PastSurveys() {
     localStorage.setItem('pastSurveyId', survey.SurveyId);
   };
 
-  const openModal = (surveyId) => {
+  const openModal = (surveyId: number) => {
     setSurveyIdForDelete(surveyId);
     setModalOpened(true);
   }
@@ -86,8 +87,7 @@ function PastSurveys() {
     setModalOpened(false)
   }
 
-  const deleteSurvey = async (SurveyId) => {
-    console.log('delete SurveyId: ', SurveyId)
+  const deleteSurvey = async (SurveyId: number) => {
     setDeletingSurvey(true)
     fetch(`${fetchUrl}/deleteSurvey`, {
       method: "DELETE",
@@ -102,7 +102,6 @@ function PastSurveys() {
       .then(() => {
         setModalOpened(false)
         setDeletingSurvey(false)
-        console.log('.then complete ')
       })
   }
 
@@ -114,7 +113,7 @@ function PastSurveys() {
           <span className={'infoSpan season'}>{survey.Season}</span>
           <span className='infoSpan'>{abbreviateBirderName(survey.Birder)}</span>
           <span className='infoSpan'>
-            <Link to={`/new-survey/${client.clientId}`}>
+            <Link to={`/new-survey/${client.ClientId}`}>
               <button
                 className='reset-button'
                 onClick={() => editingPreviousSurvey(survey)}>{<IconEdit size={30} />}</button>
@@ -133,7 +132,7 @@ function PastSurveys() {
           <button
             className='infoSpan surveyDeleteButton'
             onClick={() => openModal(survey.SurveyId)}
-            width={'20px'}
+            style={{"width" : "20px"}}
           >X</button>
           </span>
       </div>

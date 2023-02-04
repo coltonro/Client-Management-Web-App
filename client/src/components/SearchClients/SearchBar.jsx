@@ -22,7 +22,7 @@ function SearchBar({ loggedIn }) {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          securityCheck: securityCheckValue // super simple/hacky way to prevent client from accessing data by manupulating the browser url
+          securityCheck: securityCheckValue // simple way to prevent client from accessing data by manupulating the browser url
         })
       })
         .then(response => response.json())

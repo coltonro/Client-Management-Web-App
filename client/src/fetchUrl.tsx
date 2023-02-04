@@ -2,7 +2,7 @@
 // remember to set to production before pushing to GitHub/production
 
 // Production
-export const fetchUrl = "https://birdsurveyapp.azurewebsites.net";
+export const fetchUrl: string = "https://birdsurveyapp.azurewebsites.net";
 
 // Development
-// export const fetchUrl = "http://localhost:8080";
+// export const fetchUrl: string = "http://localhost:8080";

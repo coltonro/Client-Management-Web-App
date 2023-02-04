@@ -45,7 +45,7 @@ function NewSurvey() {
 
   // populate all survey components with backend data depending on if brand new survey or editing a past survey
   useEffect(() => {
-    const editingPastSurvey = localStorage.getItem('editingPastSurvey'); // either true or does not exist
+    const editingPastSurvey = localStorage.getItem('editingPastSurvey'); // checks to see if item exists
 
     fetch(`${fetchUrl}/stations`, {
       method: "post",
@@ -81,12 +81,11 @@ function NewSurvey() {
         setSurveyData(copySurveyData);
       });
 
-    if (editingPastSurvey) {
+    if (editingPastSurvey) { // if this is a previously submitted survey now being edited by the user
       const storedSurveyId = localStorage.getItem('pastSurveyId');
       setPastSurveyId(storedSurveyId);
-      localStorage.setItem('editingPastSurvey', false)
+      localStorage.removeItem('editingPastSurvey')
 
-      // if (pastSurveyId) { // if retrieving data from a past survey
       setNewSurveyId(null);
       fetch(`${fetchUrl}/gatherReportData`, {
         method: "POST",
@@ -129,7 +128,7 @@ function NewSurvey() {
           }
           setDbStationTimeBegan(arrayOfDbStationTimes);
         })
-    } else { // else if beginning a new survey
+    } else { // else if beginning a brand new survey
 
       fetch(`${fetchUrl}/generateNewReportId`)
         .then(res => res.json())
